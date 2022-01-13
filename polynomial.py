@@ -28,7 +28,7 @@ class Poly2:
         return f"{h}X^2 + {k}X + {l}"
 
     def __repr__(self):
-        msg = 'Poly2(' + ', '.join([str(c) for c in sorted(self.coeffs.values())]) + ')'
+        msg = "Poly2(" + (', '.join([str(self.a), str(self.b), str(self.c)]))+ ")"
         return msg
 
     def __str__(self):
