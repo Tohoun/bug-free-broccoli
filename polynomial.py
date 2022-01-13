@@ -60,10 +60,10 @@ class Poly2:
         y = self.a*(self.x**2) + self.b*self.x + self.c
         return y
 
-    def draw(self, x_points=None):
+    def draw(self, x_points=20):
         """ Méthode qui trace la courbe, voir fichier png."""
         import numpy as np
-        x = np.linspace(0, 18, 20)
+        x = np.linspace(0, 18, x_points)
         y = self.a*(x**2) + self.b*x + self.c
         fig = plt.figure(figsize = (10, 5))
         plt.plot(x, y, "gx")
